@@ -10,7 +10,6 @@
 
      <!--  :::::: icon link ::::::: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
     <title>yusuf's-portfolio</title>
@@ -79,22 +78,22 @@
         </div>
         <div class="relative md:hidden group ">
                 <!-- Hamburger Icon -->
-            <div class="p-2 cursor-pointer bg-[#FF014F] rounded-full ">
+            <div id="menuBtn" class="p-2 cursor-pointer bg-[#FF014F] rounded-full ">
                 <i class="fa fa-bars-staggered text-2xl"></i>
             </div>
-                 <!-- Dropdown Menu -->
-            <div class="absolute left-0 top-12 w-full bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
-                <ul class="flex flex-col text-center text-gray-700">
-                    <li class="py-3 border-b hover:bg-gray-100">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="py-3 border-b hover:bg-gray-100">
-                        <a href="">Project</a>
-                    </li>
-                    <li class="py-3 hover:bg-gray-100">
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
+            <!-- drop down content -->
+            <div class="relative">
+                <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border">
+                    <a href="#" class="block px-4 py-2 transition-colors duration-300 ease-in-out hover:bg-red-500 hover:text-white">
+                      Profile
+                    </a>
+                    <a href="#" class="block px-4 py-2 transition-colors duration-300 ease-in-out hover:bg-red-500 hover:text-white">
+                     Settings
+                    </a>
+                    <a href="#" class="block px-4 py-2 transition-colors duration-300 ease-in-out hover:bg-red-500 hover:text-white">
+                     Logout
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -148,7 +147,7 @@
                         <!-- ::::::::::::::::: ABOUT SECTION ::::::::::::::: -->
                         <!-- ::::::::::::::::: ABOUT SECTION ::::::::::::::: -->
                          
-    <section class=" max-sm:flex max-sm:flex-col mt-40 max-w-[90%] m-auto flex flex-row ">
+    <section class=" max-sm:flex max-sm:flex-col md:flex md:flex-col  lg:mt-40 lg:max-w-[90%] lg:m-auto lg:flex lg:flex-row ">
                         <!-- ::::::::::::::::: CARD ::::::::::::::: -->
         <div class="flex flex-1 ">
             <div class="max-sm:w-60 max-sm:h-80 max-sm:ml-10 ml-30 flex flex-col w-100 h-110 py-10 rounded-3xl  shadow-2xl bg-white opacity-100 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(239,68,68,0.3)] ">
@@ -173,7 +172,7 @@
     <section class="max-w-[90%] m-auto flex flex-col mt-30">
         <h1 class="flex justify-center text-xl text-[#FF014F] mb-10 font-semibold">My Project</h1>
                         <!-- ::::::::::::::::: ALISTER CARD ::::::::::::::: -->
-        <div class="grid grid-cols-2 gap-15  max-sm:flex max-sm:flex-col ">
+        <div class="grid grid-cols-2 gap-15  max-lg:flex max-lg:flex-col ">
             <div class="flex flex-col bg-gray-100 w-130 h-100 rounded-2xl transition-all duration-300 hover:shadow-[0_10px_30px_rgba(239,68,68,0.3)] max-sm:w-73 max-sm:h-80">
                 <img class="p-4 " src="images/flex-box-assignment.png" alt="">
                 <h2 class="text-2xl pl-4 pb-2 font-semibold ">Flex-box</h2>
@@ -222,6 +221,60 @@
                 </div>
             </div>
     </section>
+                        <!-- ::::::::::::::::: MY SKILLS SECTION ::::::::::::::: -->
+                        <!-- ::::::::::::::::: MY SKILLS SECTION ::::::::::::::: -->
+                        <!-- ::::::::::::::::: MY SKILLS SECTION ::::::::::::::: -->
+                        <!-- ::::::::::::::::: MY SKILLS SECTION ::::::::::::::: -->
+    
+    <section class="mt-20 px-6 ">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#FF014F] text-center mb-10">
+        My Skills
+        </h2>
+        <div class=" max-w-[90%] m-auto sm:grid-cols-3 md:grid-cols-4 flex flex-col gap-7">
+                        <!-- ::::::::::::::::: HTML CARD ::::::::::::::: -->
+            <div class="bg-white shadow-2xl p-6 rounded-xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <i class="fab fa-html5 text-4xl text-[#FF014F] mb-3"></i>
+                <div class="w-full max-w-[80%] mx-auto">
+                    <div class="text-center mb-2 font-medium">HTML: 100%</div>
+                    <div class="w-full bg-gray-100 rounded-full h-4">
+                        <div class="bg-red-500 h-4 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ::::::::::::::::: CSS CARD ::::::::::::::: -->
+            <div class="bg-white shadow-2xl p-6 rounded-xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <i class="fab fa-css3-alt text-4xl text-[#FF014F] mb-3"></i>
+                <div class="w-full max-w-[80%] mx-auto">
+                    <div class="text-center mb-2 font-medium">CSS: 100%</div>
+                    <div class="w-full bg-gray-100 rounded-full h-4">
+                        <div class="bg-[#FF014F] h-4 rounded-full" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ::::::::::::::::: JAVASCRIPT CARD ::::::::::::::: -->
+            <div class="bg-white shadow-2xl p-6 rounded-xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <i class="fab fa-js text-4xl text-[#FF014F] mb-3"></i>
+                <div class="w-full max-w-[80%] mx-auto">
+                    <div class="text-center mb-2 font-medium">JAVASCRIPT: 50%</div>
+                    <div class="w-full bg-gray-100 rounded-full h-4">
+                        <div class="bg-[#FF014F] h-4 rounded-full" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+                        <!-- ::::::::::::::::: TAILWIND CARD ::::::::::::::: -->
+            <div class="bg-white shadow-2xl p-6 rounded-xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <i class="fa fa-wind text-4xl text-[#FF014F] mb-3"></i>
+                <div class="w-full max-w-[80%] mx-auto">
+                    <div class="text-center mb-2 font-medium">TAILWIND: 90%</div>
+                    <div class="w-full bg-gray-100 rounded-full h-4">
+                        <div class="bg-[#FF014F] h-4 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+</section>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

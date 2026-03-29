@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+#dropdownMenu{
+    
+}
+#dropdownMenu:hover #menuBtn{
+    display: flex;
+    flex-direction: column;
+    padding-left:12rem ;
+}
